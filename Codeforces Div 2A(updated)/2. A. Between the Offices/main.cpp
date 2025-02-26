@@ -46,7 +46,7 @@ void solve(){
 	}
 	cout << ((cnt1>cnt2) ? "YES": "NO") ;
 	return;
-} 
+
 
 int main(){
 	fast;
