@@ -18,7 +18,7 @@ int main() {
             if ((double)a[i] / d > 0) {
                 count++;
             }
-        }
+        }	
         if (count >= required) {
             cout << d << endl;
             return 0;
