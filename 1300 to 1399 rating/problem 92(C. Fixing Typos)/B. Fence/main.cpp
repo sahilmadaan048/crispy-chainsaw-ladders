@@ -54,7 +54,7 @@ void solve(){
     int min_index =  0;
     int mini = prefix[k-1];
 
-    for(int i=1; i<n-k; i++) {
+    for(int i=1; i<= n-k; i++) {
         int curr = prefix[i + k -1] - prefix[i-1];
 
         if(curr < mini ) {
