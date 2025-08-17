@@ -1,4 +1,4 @@
-// https://codeforces.com/contest/363/problem/B
+// https://codeforces.com/contest/357/problem/C
 
 #include "bits/stdc++.h"
 #define int long long
@@ -37,35 +37,8 @@ template<typename typC> ostream &operator<<(ostream &cout,const vector<typC> &a)
 
 
 void solve(){
-    int n, k; cin >> n >> k;
 
-    vector<int> h(n);
-
-    fr(i, n) cin >> h[i];
-
-    vector<int> prefix(n);
-
-    prefix[0] = h[0];
-
-    for(int i=1; i<n; i++) {
-        prefix[i] = prefix[i-1] + h[i];
-    }
-
-    int min_index =  0;
-    int mini = prefix[k-1];
-
-    for(int i=1; i<=n-k; i++) {
-        int curr = prefix[i + k -1] - prefix[i-1];
-
-        if(curr < mini ) {
-            mini = curr;
-            min_index = i;
-        }
-    }
-
-
-    cout << min_index + 1 << endl;
-
+    
 }
 
 int32_t main()
@@ -75,7 +48,6 @@ int32_t main()
  cin.tie(NULL);
 
     int T = 1;
-    // cin >> T;
     while (T--)
     {
         solve();
