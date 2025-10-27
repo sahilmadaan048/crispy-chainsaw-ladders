@@ -1,1 +1,2 @@
-🥞# crispy-chainsaw-ladders - solutions to codeforces problem sorted by rating
+# crispy-chainsaw-ladders
+🥞 solutions to codeforces problem sorted by rating
